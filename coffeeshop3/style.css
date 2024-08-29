@@ -1,0 +1,117 @@
+/* PC、スマホ共通スタイル */
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    max-width: 1080px;
+    margin: 0 auto 0 auto;
+    font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* ヘッダー */
+#inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+#nav-pc > ul {
+    display: flex;
+    padding: 0;
+    font-size: 14px;
+}
+
+#nav-pc li {
+    list-style: none;
+    margin-left: 20px;
+    display: block;
+}
+
+#nav-pc a {
+    text-decoration: none;
+    color: #04414A;
+}
+
+#nav-pc a:hover {
+    text-decoration: underline;
+}
+
+/* メインビジュアル */
+#main-visual {
+    height: 400px;
+    position: relative;
+}
+
+#main-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 620px;
+    background-color: #04414A;
+    border-radius: 0 0 150px 0;
+    z-index: 11;
+}
+
+#main-photo {
+   max-width: 600px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 10;
+}
+
+#main-message > h1 {
+    color: #fff;
+    font-size: 60px;
+    margin: 100px 0 0 50px;
+}
+
+#main-message > p {
+    color: #fff;
+    font-size: 28px;
+    margin: 0 0 0 50px;
+}
+
+/* 見出し */
+h2 {
+    margin: 40px 0 0 0;
+}
+
+h2::after {
+    content: url(images/line.png);
+    margin-left: 10px;
+}
+
+h3 {
+    font-size: 27px;
+}
+
+/* コンセプト */
+#concept {
+    margin: 80px auto 0 auto;
+    padding: 0 40px 0 40px;
+}
+
+#concept-flex {
+    display: flex;
+    
+}
+
+#concept-flex > div {
+    width: 50%;
+    margin: 20px;
+    text-align: center;
+}
+
+#concept-flex img {
+    width: 80%;
+}
+
+/* プロダクト */
+#product {
+    display: flex;
+}
