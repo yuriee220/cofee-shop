@@ -1,0 +1,377 @@
+/* PC、スマホ共通スタイル */
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    max-width: 1080px;
+    margin: 0 auto 0 auto;
+    font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* ヘッダー */
+#inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+#nav-pc > ul {
+    display: flex;
+    padding: 0;
+    font-size: 14px;
+}
+
+#nav-pc li {
+    list-style: none;
+    margin-left: 20px;
+    display: block;
+}
+
+#nav-pc a {
+    text-decoration: none;
+    color: #04414A;
+}
+
+#nav-pc a:hover {
+    text-decoration: underline;
+}
+
+/* メインビジュアル */
+#main-visual {
+    height: 400px;
+    position: relative;
+}
+
+#main-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 620px;
+    background-color: #04414A;
+    border-radius: 0 0 150px 0;
+    z-index: 11;
+}
+
+#main-photo {
+   max-width: 600px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   z-index: 10;
+}
+
+#main-message > h1 {
+    color: #fff;
+    font-size: 60px;
+    margin: 100px 0 0 50px;
+}
+
+#main-message > p {
+    color: #fff;
+    font-size: 28px;
+    margin: 0 0 0 50px;
+}
+
+/* 見出し */
+h2 {
+    margin: 40px 0 0 0;
+}
+
+h2::after {
+    content: url(images/line.png);
+    margin-left: 10px;
+}
+
+h3 {
+    font-size: 27px;
+}
+
+/* コンセプト */
+#concept {
+    margin: 80px auto 0 auto;
+    padding: 0 40px 0 40px;
+}
+
+#concept-flex {
+    display: flex;
+}
+
+#concept-flex > div {
+    width: 50%;
+    margin: 20px;
+    text-align: center;
+}
+
+#concept-flex img {
+    width: 80%;
+}
+
+/* プロダクト */
+#product {
+    background-color: #fafafa;
+    padding: 10px 40px 0 40px;
+    margin: 20px 0 80px 0;
+}
+
+#product > div {
+    display: flex;
+    margin: 40px 0 0 0;
+}
+
+#product-left {
+    width: 50%;
+    margin-right: 20px;
+}
+
+#product-right {
+    width: 50%;
+    margin: 80px 0 0 20px;
+}
+
+.product-photo {
+    width: 100%;
+}
+
+#product-left > div {
+    position: relative;
+    margin-right: 20px;
+    height: 480px;
+}
+
+#product-right > div {
+    position: relative;
+    margin-left: 20px;
+    height: 480px;
+}
+
+.product-explain {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 40px 0 40px;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+}
+
+.product-explain > span {
+    color: #04414A;
+    font-weight: bold;
+}
+.product-explain > h3 {
+    margin: 5px 0 5px 0;
+}
+
+.product-explain > p {
+    margin: 0;
+}
+
+/* 会社概要 */
+#company {
+    margin: 80px auto 80px auto;
+    padding: 10px 40px 0 40px;
+}
+
+#company-table {
+    width: 100%;
+} 
+
+.tableheader {
+    border-bottom-color: #04414A;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding: 20px;
+    width: 100px;
+    text-align: left;
+}
+
+.tableheader-first {
+    border-top-color: #04414A;
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+.cell {
+    border-bottom-color: #ececec;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding: 30px;
+}
+
+.cell-first {
+    border-top-color: #ececec;
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+/* フッター */
+footer {
+    background-color: #04414A;
+    text-align: center;
+    padding: 80px 80px 40px 80px;
+}
+
+#footer-logo {
+    margin-bottom: 30px;
+}
+#footer-link {
+    margin: 20px 0 40px 0;
+}
+
+#footer-link > a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px 0 10px;
+}
+
+#footer-link > a:hover {
+    text-decoration: underline;
+}
+
+#sns-footer {
+    text-align: left;
+    margin-right: 20px;
+    width: 100%;
+}
+
+#sns-footer > a {
+    margin-right: 30px;
+}
+
+#copyright {
+    float: right;
+    color: #fff;
+    margin: 20px 0 20px 0;
+}
+
+/*================
+　スマホ用レイアウト
+  ================ */
+  @media screen and (max-width: 767px) {
+    /* メインビジュアル */
+    #main-visual {
+        position: relative;width: 100%;
+        overflow: hidden;
+        height: 470px;
+    }
+
+    #main-message {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 0 0 476px 0;
+        height: 280px;
+        width: 100%;
+    }
+
+    #main-message > h1 {
+        font-size: 28px;
+        margin: 70px 0 0 20px;
+    }
+
+    #main-message > p {
+        font-size: 22px;
+        margin-left: 20px;
+    }
+
+    #main-photo {
+        width: 100%;
+        border-radius: 476px 0 0 0;
+        position: absolute;
+        top: auto;
+        right: 0;
+        bottom: 0;
+    }
+
+    /* 見出し */
+    h3 {
+        font-size: 24px;
+        margin: 10px 0 0 0;
+    }
+
+    /* コンセプト */
+    #concept {
+        margin: 20px 0 0 0;
+        padding: 0 20px 0 20px;
+    }
+    #concept-flex {
+        flex-direction: column;
+    }
+
+    #concept-flex > div {
+        width: 100%;
+        margin: 0;
+    }
+
+    #concept-flex img {
+        width: 100%;
+    }
+
+    /* プロダクト */
+    #product {
+        margin: 0;
+        padding: 10px 0 0 0;
+    }
+
+    #product h2 {
+        margin-left: 20px;
+    }
+
+    #product > div {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    #product-left, #product-right {
+        width: 100%;
+        padding: 0 20px 0 20px;
+        margin: 0;
+    }
+
+    #product-left > div,
+    #product-right > div {
+        margin: 0;
+        height: auto;
+    }
+
+    #product-photo {
+        width: 100%;
+    }
+
+    .product-explain {
+        margin: 0;
+        position: relative;
+        left: 0;
+        bottom: 70px;
+    }
+
+    /* 会社概要 */
+    #company {
+        padding: 0 20px 0 20px;
+    }
+
+    #company-table {
+        margin-top: 20px;   
+    }
+
+    .tableheader {
+        width: 50px;
+    }
+
+    footer {
+        padding: 30px 20px 40px 20px;
+    }
+
+    #footer-link > a {
+        display: block;
+        margin: 0 20px 30px 0;
+    }
+
+    #copyright {
+        font-size: 12px;
+        margin-top: 30px
+    }
+  }
